@@ -17,10 +17,10 @@ script:
 notificacion:
   email:
     recipients:
-        - r.livise+travis@hotmail.com
-        - r.livise.l+travis@gmail.com
-      on_success: always
-      on_failure: always
+      - r.livise+travis@hotmail.com
+      - r.livise.l+travis@gmail.com
+    on_success: always
+    on_failure: always
 
 deploy:
   provider: heroku
