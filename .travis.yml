@@ -1,0 +1,31 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/npm
+
+node_js: '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notificacion:
+  email:
+    recipients:
+        - r.livise+travis@hotmail.com
+        - r.livise.l+travis@gmail.com
+      on_success: always
+      on_failure: always
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep_history: true
+  api-key: apiKey
+  app: platzi-store-backend-1
+  on:
+    repo: R-Livise/platzi-store-backend
