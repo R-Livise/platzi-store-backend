@@ -1,11 +1,12 @@
 language: node_js
 
-cache:
+caches:
   directories:
     - node_modules
     - ~/.npm
 
-node_js: '12'
+node_js: 
+  - '12'
 
 git:
   depth: 3
