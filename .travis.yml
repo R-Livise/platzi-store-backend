@@ -24,9 +24,9 @@ notificacion:
 
 deploy:
   provider: heroku
-  skip_cleanup: true
-  keep_history: true
-  api-key: f58fac57-6f09-486f-bb42-66efecda5411
+  skip-cleanup: true
+  keep-history: true
+  api_key: f58fac57-6f09-486f-bb42-66efecda5411
   app: platzi-store-backend-1
   on:
     repo: R-Livise/platzi-store-backend
